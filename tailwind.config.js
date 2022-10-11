@@ -7,7 +7,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-    pageExtensions: ["page.tsx", "page.ts"],
-
   plugins: [],
 };
