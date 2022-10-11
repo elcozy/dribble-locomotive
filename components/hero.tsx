@@ -8,12 +8,12 @@ const Hero: NextPage = () => {
           <div className="relative z-10 bg-white pb-8 sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-32">
             <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
               <div className="sm:text-center lg:max-w-3xl lg:mx-auto">
-                <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:max-w-xl lg:mx-auto  md:text-6xl">
+                <h1 className="!leading-tight text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:max-w-xl lg:mx-auto  md:text-6xl">
                   <span className="block xl:inline">
                     Easy way to manage your productivity
                   </span>
                 </h1>
-                <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl lg:max-w-full sm:text-lg md:mt-5 md:text-xl">
+                <p className="!leading-relaxed mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl lg:max-w-full sm:text-lg md:mt-5 md:text-xl">
                   Drive performance and your cross-functional collaboration with
                   easy-to-use dashboards and data visualizions and automated
                   insights in one click
