@@ -47,7 +47,7 @@ const Testimonial: NextPage = () => {
           options={{
             type: "loop",
             drag: "free",
-            perPage: 2,
+            autoWidth: true,
             gap: "6px",
             arrows: false,
             pagination: false,
@@ -58,7 +58,7 @@ const Testimonial: NextPage = () => {
           {Array.from(Array(4).keys()).map((item) => (
             <React.Fragment key={item + "c"}>
               <SplideSlide>
-                <div className="max-w-2xl m-1 p-3 bg-white text-gray-800 rounded-md drop-shadow-lg gap-1.5 md:p-5 flex flex-col">
+                <div className="max-w-xs md:max-w-2xl m-1 p-3 bg-white text-gray-800 rounded-md drop-shadow-lg gap-1.5 md:p-5 flex flex-col">
                   <div className="team-logo font-bold text-xl uppercase">
                     REYNOLDS
                   </div>
