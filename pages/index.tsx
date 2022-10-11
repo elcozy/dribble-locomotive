@@ -6,7 +6,6 @@ import {
   Hero,
   Demo,
   Testimonial,
-  Contact,
   WhatWeDo,
   Partner,
 } from "../components";
@@ -26,14 +25,13 @@ const Home: NextPage = () => {
         ></link>
       </Head>
 
-      <main className="w-full">
+      <main className="w-full overflow-hidden">
         <Header />
         <Hero />
         <Demo />
         <WhatWeDo />
         <Partner />
         <Testimonial />
-        <Contact />
         <Footer />
       </main>
     </div>

@@ -9,100 +9,48 @@ const Partner: NextPage = () => {
     <div className=" bg-blue-700 py-6 md:py-16">
       <div className="flex justify-center">
         <div className="container">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0 mb-3">
-              <div className="relative flex flex-col py-3">
-                <h2 className="tracking-wider font-medium text-white lg:max-w-xl text-2xl sm:text-3xl mb-0">
-                  <span className="md:block xl:inline">Over 200+ teams</span>
-                  <span className="md:block xl:inline"> worldwide rely on</span>
-                  <span className="md:block xl:inline"> Locomotive</span>
-                </h2>
-              </div>
-              <div className="relative flex flex-col py-3">
-                <p className="text-white text-base sm:text-sm  mb-5 text-left">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maxime mollitia, molestiae quas vel sint commodi repu andae
-                  consequun mollitia, molestiae quas vel sint commodi repu andae
-                  consequun turfr voluptatum.
-                </p>
-                <div className="flex text-sm items-center cursor-pointer text-white">
-                  <span className="">See more </span>
-                  <span className="ml-2">
-                    <ArrowRightIcon className="h-4 w-6" aria-hidden="true" />
-                  </span>
-                </div>
+          <h2 className="text-2xl font-semibold text-white w-full sm:text-3xl mb-4 text-center">
+            <span className="block">You are not alone. The pain of</span>
+            <span className="block"> website creation is real</span>
+          </h2>
+          <div className="mx-auto px-4 sm:px-6 lg:px-8 md:pt-9">
+            <div className="space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10 md:space-y-0 mb-3">
+              <div className="col-span-3 w-full m-1 px-4 md:p-12 py-7 bg-white text-gray-800 rounded-md drop-shadow-lg gap-1.5 flex flex-col md:flex-row">
+                {Array.from(Array(3).keys()).map((num) => (
+                  <div
+                    className={` ${
+                      num % 3 == 0
+                        ? "pb-4 md:pr-4"
+                        : num % 2 == 0
+                        ? "pt-4 md:pl-4"
+                        : "py-4 md:px-4  border-y-2 md:border-x-2"
+                    } relative flex flex-col`}
+                  >
+                    <div className="rounded-full bg-yellow-400 flex justify-center items-center w-12 h-12">
+                      <img
+                        alt="Sark"
+                        className="h-5 w-auto sm:h-7"
+                        src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600"
+                      />
+                    </div>
+
+                    <p className="py-5 text-base sm:text-sm text-left text-gray-500">
+                      "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Maxime mollitia, molestiae quas vel sint commodi repu
+                      andae consequun mollitia"
+                    </p>
+                    <div className="flex flex-col">
+                      <span className="font-bold">Leslie Alexander</span>
+                      <span className="text-gray-400 text-sm font-semibold">
+                        President of Marketing, SS
+                      </span>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="carousel rounded-box gap-1.5 pt-5 pb-4 flex flex-col">
-        <Splide
-          aria-label="My Favorite Images"
-          options={{
-            type: "loop",
-            drag: "free",
-            // perPage: 3,
-            autoWidth: true,
-            gap: "6px",
-            arrows: false,
-            pagination: false,
-            focus: "center",
-            autoScroll: {
-              pauseOnHover: false,
-              speed: 1,
-            },
-          }}
-          extensions={{ AutoScroll }}
-        >
-          {Array.from(Array(10).keys()).map((item) => (
-            <React.Fragment key={item + "b"}>
-              <SplideSlide>
-                <div className="w-40 h-40 drop-shadow-lg p-6 m-2 bg-blue-700 rounded-md flex justify-center items-center">
-                  <div className="rounded-md drop-shadow-xl">
-                    <img
-                      className="rounded-md"
-                      src="https://via.placeholder.com/150x60/A2ABFF"
-                    />
-                  </div>
-                </div>
-              </SplideSlide>
-            </React.Fragment>
-          ))}
-        </Splide>
-        <Splide
-          aria-label="My Favorite Images"
-          options={{
-            type: "loop",
-            drag: "free",
-            autoWidth: true,
-            gap: "6px",
-            arrows: false,
-            pagination: false,
-            focus: "center",
-            autoScroll: {
-              speed: -1,
-              pauseOnHover: false,
-              rewind: false,
-            },
-          }}
-          extensions={{ AutoScroll }}
-        >
-          {Array.from(Array(10).keys()).map((item) => (
-            <React.Fragment key={item}>
-              <SplideSlide>
-                <div className="w-40 h-40 drop-shadow-lg p-6 m-2 bg-blue-700 rounded-md flex justify-center items-center">
-                  <div className="rounded-md drop-shadow-lg">
-                    <img
-                      className="rounded-md"
-                      src="https://via.placeholder.com/150x60/A2ABFF"
-                    />
-                  </div>
-                </div>
-              </SplideSlide>
-            </React.Fragment>
-          ))}
-        </Splide>
       </div>
     </div>
   );

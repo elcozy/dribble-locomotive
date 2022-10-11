@@ -22,7 +22,7 @@ const Header: NextPage = () => {
             <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
               <div className="flex w-full items-center justify-between md:w-auto">
                 <a href="#">
-                  <span className="sr-only">Locomotive</span>
+                  <span className="sr-only">Sark</span>
                   <img
                     alt="Your Company"
                     className="h-8 w-auto sm:h-10"
@@ -30,7 +30,7 @@ const Header: NextPage = () => {
                   />
                 </a>
                 <span className="pl-2 self-center text-xl font-semibold whitespace-nowrap text-gray-700">
-                  Locomotive
+                  Sark
                 </span>
                 <div className="-mr-2 flex items-center md:hidden">
                   <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
