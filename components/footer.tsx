@@ -142,7 +142,7 @@ const Footer: NextPage = () => {
         </footer>
       </div>
       <footer className="flex py-4 md:py-5 w-full items-center justify-center bg-zinc-800">
-        <div className="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between text-gray-400 text-sm">
+        <div className="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between text-gray-400 text-sm gap-2 md:gap-0">
           <div className="flex flex-col uppercase">SINCE 2022</div>
           <div className="flex flex-col uppercase">
             © 2022 COPYRIGHt by REY - Locomotive{" "}

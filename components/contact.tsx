@@ -11,7 +11,7 @@ const Contact: NextPage = () => {
           <div className="relative z-10 pb-8 sm:pb-16 md:pb-12 lg:w-full">
             <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
               <div className="sm:text-center">
-                <h2 className="!leading-tight text-left text-3xl font-semibold text-white lg:max-w-5xl sm:text-4xl md:text-5xl lg:text-6xl tracking-normal">
+                <h2 className="!leading-tight text-left text-3xl font-semibold text-white lg:max-w-5xl sm:text-4xl md:text-4xl lg:text-5xl tracking-normal">
                   <span className="lg:block xl:inline">
                     Are you ready to manage your data
                   </span>
@@ -29,6 +29,7 @@ const Contact: NextPage = () => {
                   <div className="my-3">
                     <input
                       type="text"
+                      placeholder="Business email"
                       className="flex w-full items-center justify-center rounded-full border border-transparent bg-white px-8 py-2 text-base font-medium text-blue-700 md:py-3 md:px-10 md:text-lg"
                     />
                   </div>

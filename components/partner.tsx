@@ -42,7 +42,8 @@ const Partner: NextPage = () => {
           options={{
             type: "loop",
             drag: "free",
-            perPage: 3,
+            // perPage: 3,
+            autoWidth: true,
             gap: "6px",
             arrows: false,
             pagination: false,
@@ -57,11 +58,13 @@ const Partner: NextPage = () => {
           {Array.from(Array(10).keys()).map((item) => (
             <React.Fragment key={item + "b"}>
               <SplideSlide>
-                <div className="drop-shadow-lg">
-                  <img
-                    className="rounded-md"
-                    src="https://via.placeholder.com/1980x1080/3147F3"
-                  />
+                <div className="w-40 h-40 drop-shadow-lg p-6 m-2 bg-blue-700 rounded-md flex justify-center items-center">
+                  <div className="rounded-md drop-shadow-xl">
+                    <img
+                      className="rounded-md"
+                      src="https://via.placeholder.com/150x60/A2ABFF"
+                    />
+                  </div>
                 </div>
               </SplideSlide>
             </React.Fragment>
@@ -72,7 +75,7 @@ const Partner: NextPage = () => {
           options={{
             type: "loop",
             drag: "free",
-            perPage: 3,
+            autoWidth: true,
             gap: "6px",
             arrows: false,
             pagination: false,
@@ -88,11 +91,13 @@ const Partner: NextPage = () => {
           {Array.from(Array(10).keys()).map((item) => (
             <React.Fragment key={item}>
               <SplideSlide>
-                <div className="drop-shadow-lg">
-                  <img
-                    className="rounded-md"
-                    src="https://via.placeholder.com/1980x1080/3147F3"
-                  />
+                <div className="w-40 h-40 drop-shadow-lg p-6 m-2 bg-blue-700 rounded-md flex justify-center items-center">
+                  <div className="rounded-md drop-shadow-lg">
+                    <img
+                      className="rounded-md"
+                      src="https://via.placeholder.com/150x60/A2ABFF"
+                    />
+                  </div>
                 </div>
               </SplideSlide>
             </React.Fragment>
