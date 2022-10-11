@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
+import React from "react";
 
 const Partner: NextPage = () => {
   return (
@@ -55,15 +56,17 @@ const Partner: NextPage = () => {
         >
           {Array(12)
             .fill(0)
-            .map(() => (
-              <SplideSlide>
-                <div className="drop-shadow-lg">
-                  <img
-                    className="rounded-md"
-                    src="https://via.placeholder.com/1980x1080/3147F3"
-                  />
-                </div>
-              </SplideSlide>
+            .map((item) => (
+              <React.Fragment key={item}>
+                <SplideSlide>
+                  <div className="drop-shadow-lg">
+                    <img
+                      className="rounded-md"
+                      src="https://via.placeholder.com/1980x1080/3147F3"
+                    />
+                  </div>
+                </SplideSlide>
+              </React.Fragment>
             ))}
         </Splide>
         <Splide
@@ -86,15 +89,17 @@ const Partner: NextPage = () => {
         >
           {Array(12)
             .fill(0)
-            .map(() => (
-              <SplideSlide>
-                <div className="drop-shadow-lg">
-                  <img
-                    className="rounded-md"
-                    src="https://via.placeholder.com/1980x1080/3147F3"
-                  />
-                </div>
-              </SplideSlide>
+            .map((item) => (
+              <React.Fragment key={item}>
+                <SplideSlide>
+                  <div className="drop-shadow-lg">
+                    <img
+                      className="rounded-md"
+                      src="https://via.placeholder.com/1980x1080/3147F3"
+                    />
+                  </div>
+                </SplideSlide>
+              </React.Fragment>
             ))}
         </Splide>
       </div>

@@ -9,7 +9,7 @@ import {
   Contact,
   WhatWeDo,
   Partner,
-} from "./components";
+} from "../components";
 import "@splidejs/react-splide/css";
 
 const Home: NextPage = () => {

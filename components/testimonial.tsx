@@ -1,6 +1,7 @@
 import { ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import type { NextPage } from "next";
+import React from "react";
 
 const Testimonial: NextPage = () => {
   return (
@@ -50,15 +51,17 @@ const Testimonial: NextPage = () => {
         >
           {Array(4)
             .fill(0)
-            .map(() => (
-              <SplideSlide>
-                <div className="drop-shadow-lg py-5">
-                  <img
-                    className="rounded-md"
-                    src="https://via.placeholder.com/4560x2000/FFFFFF"
-                  />
-                </div>
-              </SplideSlide>
+            .map((item) => (
+              <React.Fragment key={item}>
+                <SplideSlide>
+                  <div className="drop-shadow-lg py-5">
+                    <img
+                      className="rounded-md"
+                      src="https://via.placeholder.com/4560x2000/FFFFFF"
+                    />
+                  </div>
+                </SplideSlide>
+              </React.Fragment>
             ))}
         </Splide>
       </div>
