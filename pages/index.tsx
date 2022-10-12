@@ -8,6 +8,7 @@ import {
   Testimonial,
   WhatWeDo,
   Partner,
+  Banner,
 } from "../components";
 import "@splidejs/react-splide/css";
 
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="w-full overflow-hidden">
+        <Banner />
         <Header />
         <Hero />
         <Demo />

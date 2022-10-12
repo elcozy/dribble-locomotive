@@ -42,7 +42,10 @@ const Demo: NextPage = () => {
         </div>
         <div className="relative flex flex-col md:flex-row gap-4">
           {marketingPattern.map((item) => (
-            <div className="relative flex flex-col rounded-md border-2 p-6 lg:p-9 border-slate-900">
+            <div
+              key={item.title}
+              className="relative flex flex-col rounded-md border-2 p-6 lg:p-9 border-slate-900"
+            >
               <div className="mb-4 md:mb-5 rounded-full bg-white flex justify-center items-center w-12 h-12">
                 <img
                   alt="Sark"

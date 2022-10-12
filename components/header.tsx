@@ -8,6 +8,7 @@ const navigation = [
   { name: "Features", href: "#features" },
   { name: "Pricing", href: "#pricing" },
   { name: "Resources", href: "#resources" },
+  { name: "Contact", href: "#contact" },
 ];
 
 const Header: NextPage = () => {
@@ -41,7 +42,7 @@ const Header: NextPage = () => {
               </div>
             </div>
             <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
-              <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+              <ul className="flex flex-col mt-4 md:flex-row md:gap-12 md:mt-0 md:text-sm md:font-medium">
                 {navigation.map((item) => (
                   <li key={item.name}>
                     <a

@@ -21,7 +21,7 @@ const Testimonial: NextPage = () => {
             visitors than any website. With lots of uniques blocks, you can
             easily build a page.
           </p>
-          <div className="mt-5 sm:mt-8 sm:flex">
+          <div className="mt-5 sm:mt-8 sm:flex sm:flex-wrap sm:gap-3">
             <div className="rounded-lg shadow">
               <a
                 href="#"
@@ -30,7 +30,7 @@ const Testimonial: NextPage = () => {
                 Join now
               </a>
             </div>
-            <div className="mt-3 sm:mt-0 sm:ml-3">
+            <div className="mt-3 sm:mt-0">
               <a
                 href="#"
                 className="flex w-full items-center justify-center rounded-lg border-black border-2 bg-transparent hover:opacity-70 px-8 py-2 text-base font-medium text-black-700 hover:bg-black-100 md:py-3 md:px-10 md:text-lg"

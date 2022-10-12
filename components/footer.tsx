@@ -8,7 +8,7 @@ const Footer: NextPage = () => {
     <Container bg="bg-gray-50" text="text-gray-500" pdY="py-6 md:py-7">
       <footer className="relative md:pb-7">
         <div className=" sm:grid sm:grid-cols-6 lg:flex mt-4 sm:mt-0 sm:w-full flex flex-col lg:flex-row gap-4 lg:gap-2 justify-between">
-          <div className="flex flex-col sm:col-span-3 md:col-span-2 ">
+          <div className="flex flex-col sm:col-span-2 md:col-span-2 ">
             <span className="flex gap-2 items-center font-bold text-lg capitalize mt-0">
               <a href="#">
                 <span className="sr-only">Sark</span>
@@ -21,7 +21,7 @@ const Footer: NextPage = () => {
               Sark
             </span>
           </div>
-          <div className="flex flex-col md:flex-row md:gap-7">
+          <div className="flex sm:col-span-2 flex-col md:flex-row md:gap-7">
             {footerItems.map((items) => (
               <div
                 className="flex flex-col sm:col-span-3 md:col-span-2"
@@ -33,7 +33,7 @@ const Footer: NextPage = () => {
               </div>
             ))}
           </div>
-          <div className="flex flex-wrap gap-5">
+          <div className="flex sm:col-span-2 flex-wrap gap-5">
             <svg
               className="w-5 h-5 text-gray-500 hover:text-gray-700 fill-current cursor-pointer"
               role="img"

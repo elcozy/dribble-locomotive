@@ -1,7 +1,9 @@
 export { default as Header } from "./header";
 export { default as Footer } from "./footer";
 export { default as Hero } from "./hero";
+export { default as HeroItems } from "./heroItems";
 export { default as Demo } from "./demo";
+export { default as Banner } from "./banner";
 export { default as Testimonial } from "./testimonial";
 export { default as WhatWeDo } from "./whatwedo";
 export { default as Partner } from "./partner";

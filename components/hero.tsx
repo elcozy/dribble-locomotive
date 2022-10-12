@@ -1,12 +1,69 @@
 import type { NextPage } from "next";
+import { HeroItems } from ".";
 import { Container } from "./container";
 
-const Hero: NextPage = () => {
-  return (
+const heroFLoat = [
+  {
+    tag: "improvement",
+    color: "text-violet-500",
+    bg: "bg-violet-200",
+    imgBg: "violet",
+    comment: "Just helpful for me, and I like it!",
+    position: "top-0 origin-top-left rotate-6",
+  },
+  {
+    tag: "perfect",
+    color: "text-green-500",
+    bg: "bg-green-200",
+    imgBbg: "green",
+    comment: "Very helpful for me to manage my data",
+    position: "right-0 origin-bottom -rotate-6",
+  },
+  {
+    tag: "cool app",
+    color: "text-red-500",
+    bg: "bg-red-200",
+    imgBg: "red",
+    comment: "Its an amazing app for company to managing",
+    position: "bottom-0 origin-bottom -rotate-6",
+  },
+  {
+    tag: "awesome",
+    color: "text-amber-500",
+    bg: "bg-amber-200",
+    imgBbg: "amber",
+    comment: "I think its good app for manage!",
+    position: "bottom-0 right-0 origin-bottom rotate-6",
+  },
+];
+const Hero: NextPage = () => (
+  <div className="mt-10 md:mt-16 lg:mt-20 xl:mt-28 relative">
+    <div className="absolute z-20 hidden sm:block top-48">
+      <img alt="Sark" className="h-16 w-auto lg:h-32" src="/demo-floater.png" />
+    </div>
+    <div className="absolute z-20 hidden sm:block top-48 right-0">
+      <img
+        alt="Sark"
+        className="h-16 w-auto lg:h-32"
+        src="/demo-floater-2.png"
+      />
+    </div>
     <Container>
+      {heroFLoat.map((item) => (
+        <HeroItems
+          key={item.tag}
+          tag={item.tag}
+          comment={item.comment}
+          bg={item.bg}
+          color={item.color}
+          imgBg={item.imgBg}
+          classNames={item.position}
+        />
+      ))}
+
       <div className="mx-auto max-w-7xl">
-        <div className="relative z-10 bg-white pb-8 sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-32">
-          <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+        <div className="relative bg-white pb-8 sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-32">
+          <main className="mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6  lg:px-8">
             <div className="sm:text-center lg:max-w-4xl lg:mx-auto">
               <h1 className="!leading-tight text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:max-w-3xl lg:mx-auto  md:text-6xl lg:text-7xl">
                 <span className="block xl:inline">
@@ -41,7 +98,7 @@ const Hero: NextPage = () => {
         </div>
       </div>
     </Container>
-  );
-};
+  </div>
+);
 
 export default Hero;
