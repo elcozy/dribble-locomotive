@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.curved-bg {
-  box-sizing: border-box;
-  background-color: #f9fafb;
-  clip-path: ellipse(156% 100% at 66.96% 0%);
+@media only screen and (min-width: 768px) {
+  .curved-bg {
+    box-sizing: border-box;
+    background-color: #f9fafb;
+    clip-path: ellipse(156% 100% at 66.96% 0%);
+  }
 }
