@@ -21,6 +21,6 @@ export const Container: React.FC<TContainer> = ({
     id={id}
     className={`${className} flex flex-col ${bg} ${text} ${pdY} justify-center items-center`}
   >
-    <div className="container px-5 md:px-0 relative">{children}</div>
+    <div className="container px-5 relative">{children}</div>
   </div>
 );

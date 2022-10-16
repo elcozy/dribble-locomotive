@@ -31,24 +31,14 @@ const heroFLoat = [
     tag: "awesome",
     color: "text-amber-500",
     bg: "bg-amber-200",
-    imgBbg: "amber",
+    imgBg: "amber",
     comment: "I think its good app for manage!",
     position: "bottom-0 right-0 origin-bottom rotate-6",
   },
 ];
 const Hero: NextPage = () => (
-  <div className="mt-10 md:mt-16 lg:mt-20 xl:mt-28 relative">
-    <div className="absolute z-20 hidden sm:block top-48">
-      <img alt="Sark" className="h-16 w-auto lg:h-32" src="/demo-floater.png" />
-    </div>
-    <div className="absolute z-20 hidden sm:block top-48 right-0">
-      <img
-        alt="Sark"
-        className="h-16 w-auto lg:h-32"
-        src="/demo-floater-2.png"
-      />
-    </div>
-    <Container>
+  <div className="hero relative">
+    <Container className="my-auto w-full">
       {heroFLoat.map((item) => (
         <HeroItems
           key={item.tag}
@@ -64,7 +54,7 @@ const Hero: NextPage = () => (
       <div className="mx-auto max-w-7xl">
         <div className="relative bg-white pb-8 sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-32">
           <main className="mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6  lg:px-8">
-            <div className="sm:text-center lg:max-w-4xl lg:mx-auto">
+            <div className="text-center lg:max-w-4xl lg:mx-auto">
               <h1 className="!leading-tight text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:max-w-3xl lg:mx-auto  md:text-6xl lg:text-7xl">
                 <span className="block xl:inline">
                   Easy way to manage your productivity

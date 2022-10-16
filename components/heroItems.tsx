@@ -19,7 +19,7 @@ const HeroItem = ({
   classNames = "",
 }: THeroItem) => {
   return (
-    <div className={`${classNames} absolute z-20 hidden lg:block`}>
+    <div className={`${classNames} absolute z-20 hidden xl:block`}>
       <div className="flex flex-col w-fit items-center">
         <div className="relative flex flex-col rounded-xl py-3 px-4 shadow-md mb-4 w">
           <div

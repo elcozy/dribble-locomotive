@@ -25,7 +25,7 @@ const Testimonial: NextPage = () => {
             <div className="rounded-lg shadow">
               <a
                 href="#"
-                className="flex w-full items-center justify-center rounded-lg border border-transparent bg-black hover:opacity-80  px-8 py-2 text-base font-medium text-white md:py-3 md:px-10 md:text-lg"
+                className="flex w-full items-center justify-center rounded-lg border border-transparent bg-blue-600 hover:opacity-80  px-8 py-2 text-base font-medium text-white md:py-3 md:px-10 md:text-lg"
               >
                 Join now
               </a>
@@ -42,7 +42,7 @@ const Testimonial: NextPage = () => {
         </div>
         <div className="relative col-span-6 flex flex-col md:flex-row gap-4">
           {Array.from(Array(2).keys()).map((num) => (
-            <div className="relative flex flex-col rounded-md border-2 border-slate-300 text-slate-700 px-4 py-5">
+            <div className="relative flex flex-col rounded-md border-2 border-black text-slate-700 px-4 py-5">
               <div className="rounded-full bg-black flex justify-center items-center w-12 h-12 mb-5">
                 <img
                   alt="Sark"

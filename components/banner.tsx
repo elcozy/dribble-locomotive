@@ -4,9 +4,9 @@ import { Container } from "./container";
 
 const Banner: NextPage = () => {
   return (
-    <div className="bg-black w-full h-auto py-3">
+    <div className="hidden md:block bg-black w-full h-auto py-3">
       <Container pdY="0" bg="bg-black" text="text-white">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-2  tracking-wide text-xs md:text-sm">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 tracking-wide text-xs md:text-sm">
           <div className="rounded-full shadow text-center bg-teal-300 px-3 py-1 font-medium">
             <a
               href="#"
@@ -15,12 +15,12 @@ const Banner: NextPage = () => {
               New info
             </a>
           </div>
-          <p className="font-light opacity-90 my-auto">
+          <p className="opacity-90 my-auto">
             Learn about our 2022 performance roadmap and what it means for you
           </p>
           <a
             href="#"
-            className="border border-transparent underline text-base font-medium hover:opacity-80"
+            className="border border-transparent underline underline-offset-4 text-base font-medium hover:opacity-80"
           >
             Access now
           </a>
