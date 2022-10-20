@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import { Container } from "./container";
 
-const footerItems = ["about", "features", "works", "support"];
+const footerItems = ["about", "features", "pricing", "resources", "contact"];
 const Footer: NextPage = () => {
   return (
     <>

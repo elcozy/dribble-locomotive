@@ -1,5 +1,6 @@
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import type { NextPage } from "next";
+import React from "react";
 import { Container } from "./container";
 
 const marketingPattern = [
@@ -20,6 +21,7 @@ const marketingPattern = [
   },
 ];
 const Demo: NextPage = () => {
+  const [flipImg, setFlipImg] = React.useState(true);
   return (
     <Container bg="bg-gray-50">
       <div className="space-y-10 md:grid md:grid-cols-10 md:gap-x-8 md:gap-y-20 md:space-y-0 py-6 md:py-10">
@@ -71,7 +73,7 @@ const Demo: NextPage = () => {
         ))}
       </div>
 
-      <div className="w-full bg-transparent cursor-pointer group perspective py-4 my-16 max-w-7xl mx-auto px-5 md:px-0">
+      <div className="w-full bg-transparent cursor-pointer group py-4 my-16 max-w-7xl mx-auto px-5 md:px-0">
         <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-auto duration-1000">
           <div className="invisible image-wrapper">
             <img
@@ -87,11 +89,11 @@ const Demo: NextPage = () => {
               ></img>
             </div>
           </div>
-          <div className="top-0 absolute my-rotate-y-180 backface-hidden w-full h-autooverflow-hidden">
+          <div className="top-0 absolute my-rotate-y-180 backface-hidden w-full h-auto overflow-hidden">
             <div className="image-wrapper">
               <img
                 className="rounded-2xl drop-shadow-lg w-full"
-                src="https://via.placeholder.com/1980x1080/FFFFFF"
+                src="https://via.placeholder.com/1280x960/FFFFFF"
               ></img>
             </div>
           </div>
