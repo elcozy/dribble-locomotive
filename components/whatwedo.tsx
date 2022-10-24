@@ -7,7 +7,7 @@ const WhatWeDo: NextPage = () => {
       <Container className="curved-bg md:pb-32">
         <div className="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-20 md:space-y-0">
           <div className="relative flex flex-col py-3">
-            <h2 className="text-2xl font-semibold text-gray-900 lg:max-w-xl sm:text-3xl md:text-4xl lg:text-5xl md:font-bold mb-4">
+            <h2 className="text-2xl font-semibold text-gray-900 lg:max-w-xl sm:text-3xl md:text-4xl lg:text-5xl md:font-bold mb-4 !leading-tight">
               <span className="md:block text-blue-700">Build your</span>
               <span className="md:block"> brand & reach</span>
               <span className="md:block"> out to social followers</span>
@@ -38,7 +38,7 @@ const WhatWeDo: NextPage = () => {
             />
           </div>
           <div className="relative flex flex-col py-3">
-            <h2 className="text-2xl font-semibold text-gray-900 lg:max-w-xl sm:text-3xl md:text-4xl lg:text-5xl md:font-bold mb-4">
+            <h2 className="text-2xl font-semibold text-gray-900 lg:max-w-xl sm:text-3xl md:text-4xl lg:text-5xl md:font-bold mb-4 !leading-tight">
               <span className="md:block text-blue-700">Bring your</span>
               <span className="md:block"> target users</span>
               <span className="md:block"> together on social media</span>
@@ -56,7 +56,7 @@ const WhatWeDo: NextPage = () => {
             </p>
           </div>
           <div className="relative flex flex-col py-3">
-            <h2 className="text-2xl font-semibold text-gray-900 lg:max-w-xl sm:text-3xl md:text-4xl lg:text-5xl md:font-bold mb-4">
+            <h2 className="text-2xl font-semibold text-gray-900 lg:max-w-xl sm:text-3xl md:text-4xl lg:text-5xl md:font-bold mb-4 !leading-tight">
               <span className="md:block text-blue-700">Meet your</span>
               <span className="md:block"> customers with </span>
               <span className="md:block"> live video chat</span>

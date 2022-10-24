@@ -21,7 +21,7 @@ const marketingPattern = [
   },
 ];
 const Demo: NextPage = () => {
-  const [flipImg, setFlipImg] = React.useState(true);
+  const [showDashboard, setShowDashboard] = React.useState(false);
   return (
     <Container bg="bg-gray-50">
       <div className="space-y-10 md:grid md:grid-cols-10 md:gap-x-8 md:gap-y-20 md:space-y-0 py-6 md:py-10">
@@ -73,8 +73,20 @@ const Demo: NextPage = () => {
         ))}
       </div>
 
-      <div className="w-full bg-transparent cursor-pointer group py-4 my-16 max-w-7xl mx-auto px-5 md:px-0">
-        <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-auto duration-1000">
+      <div className="relative w-full bg-transparent cursor-pointer group py-4 my-16 max-w-7xl mx-auto px-5 md:px-0">
+        <div className="floating absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 ">
+          <button
+            onClick={() => setShowDashboard(!showDashboard)}
+            className="flex max-w-xs items-center justify-center rounded-full bg-blue-600 px-8 py-2 text-base font-medium text-white hover:bg-blue-700  md:py-3 md:px-10 md:text-lg"
+          >
+            {showDashboard ? "Close" : "Show"} dashboard
+          </button>
+        </div>
+        <div
+          className={`relative preserve-3d ${
+            showDashboard ? "my-rotate-y-180" : ""
+          } w-full h-auto duration-1000`}
+        >
           <div className="invisible image-wrapper">
             <img
               className="rounded-2xl drop-shadow-lg w-full"
