@@ -12,6 +12,8 @@ import {
 } from "../components";
 import "@splidejs/react-splide/css";
 import { Container } from "../components/container";
+import Accordion from "../components/panels";
+import CountryDropdown from "../components/countryDropdown";
 
 const pricing = [
   {
@@ -35,6 +37,25 @@ const pricing = [
       "SellHustle provides support to every businesses, and it is for every plan",
   },
 ];
+
+const lorem =
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquamnihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas aliquid.";
+
+const panels = [
+  {
+    label: "When do I receive my money?",
+    content: lorem,
+  },
+  {
+    label: "Are there any transaction limits?",
+    content: lorem,
+  },
+  {
+    label: "Who bears the transaction charge",
+    content: lorem,
+  },
+];
+
 const Pricing: NextPage = () => {
   return (
     <div className="font-['Plus_Jakarta_Sans']">
@@ -51,17 +72,24 @@ const Pricing: NextPage = () => {
 
       <main className="w-full overflow-hidden">
         <Header />
-        <Container>
+        <Container className="!pb-0">
           <div className="relative flex flex-col py-3 my-7">
-            <h2 className="!leading-tight text-2xl font-semibold text-gray-900 sm:text-3xl md:text-4xl md:font-bold lg:font-extrabold lg:text-5xl mb-4 text-center">
+            <h2 className="!leading-tight text-2xl font-semibold text-gray-900 sm:text-2xl md:text-3xl md:font-bold lg:font-extrabold lg:text-4xl mb-6 text-center">
               <span className="md:block">
                 Setup your hustle, pick a plan later
               </span>
+            </h2>
+            <h2 className="!leading-tight text-xl font-semibold text-gray-900 sm:text-2xl md:text-3xl md:font-bold lg:font-extrabold mb-4 text-center">
               <span className="md:block">
                 Start your hustle with zero cost, yes completely free
               </span>
             </h2>
           </div>
+          <div className="flex items-center justify-center">
+            {" "}
+            <CountryDropdown />
+          </div>
+
           <div className="relative flex flex-col md:flex-row gap-4">
             <div className="relative flex flex-col rounded-md border-2 p-6 lg:p-9 border-slate-900">
               <h2 className="text-lg font-semibold text-gray-900 lg:max-w-xl sm:text-xl lg:text-2xl mb-2 capitalize">
@@ -115,7 +143,7 @@ const Pricing: NextPage = () => {
             </div>
             <div className="relative flex flex-col rounded-md border-2 p-6 lg:p-9 border-slate-900">
               <h2 className="text-lg font-semibold text-gray-900 lg:max-w-xl sm:text-xl lg:text-2xl mb-2 capitalize">
-                Free
+                Premium
               </h2>
               <p className="text-gray-500 text-base mb-7">
                 Build a bespoke plan meets the complexity of your operations.
@@ -153,7 +181,7 @@ const Pricing: NextPage = () => {
                       className="h-5 w-auto sm:h-7"
                       src="https://tailwindui.com/img/logos/mark.svg?color=black&shade=600"
                     />
-                  </div>{" "}
+                  </div>
                   <h2 className="text-lg font-bold text-gray-900 lg:max-w-xl sm:text-xl lg:text-2xl mb-4 capitalize mx-auto">
                     <span className="md:block xl:inline">{item.title}</span>
                   </h2>
@@ -165,9 +193,10 @@ const Pricing: NextPage = () => {
             </div>
           </div>
           <div className="relative flex flex-col py-3 my-7">
-            <h2 className="!leading-tight text-2xl font-semibold text-gray-900 sm:text-xl md:text-2xl md:font-bold lg:font-extrabold lg:text-3xl mb-4 text-center">
+            <h2 className="!leading-tight text-2xl font-semibold text-gray-900 sm:text-xl md:text-2xl md:font-bold lg:font-extrabold lg:text-3xl mb-4 md:mb-12 text-center">
               Frequently asked questions
             </h2>
+            <Accordion panels={panels} />
           </div>
         </Container>
 

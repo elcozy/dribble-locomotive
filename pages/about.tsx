@@ -31,24 +31,26 @@ const About: NextPage = () => {
         <Header />
         <Container>
           <div>
-            <h2 className="!leading-tight text-2xl font-semibold text-gray-900 sm:text-3xl md:text-4xl md:font-bold lg:font-extrabold lg:text-5xl mb-4 text-center">
-              <span className="md:block">About SELLHUSTLE</span>
-            </h2>
-            <h2 className="!leading-tight text-base font-semibold text-gray-900  md:text-2xl md:font-bold lg:font-extrabold lg:text-3xl mb-4 text-center">
-              <span className="md:block">
-                We believe every hustler needs should be able to participate and
-                thrive in the economy.
-              </span>
-            </h2>
+            <div className="py-6 md:pb-20">
+              <h2 className="!leading-tight text-2xl font-semibold text-gray-900 sm:text-3xl md:text-4xl md:font-bold lg:font-extrabold lg:text-5xl mb-12 text-center">
+                <span className="md:block">ABOUT SELLHUSTLE</span>
+              </h2>
+              <h2 className="!leading-tight text-base font-semibold text-gray-900  md:text-2xl md:font-bold lg:font-extrabold lg:text-3xl mb-4 text-center">
+                <span className="md:block">
+                  We believe every hustler needs should be able to participate
+                  and thrive in the economy.
+                </span>
+              </h2>
+            </div>
 
-            <p className="text-base md:text-lg mb-4">
+            <p className="text-base md:text-lg mb-6">
               SellHustle started in 2021, with the goal of easing the stress of
               owning an ecommerce website. Before now, we started with building
               ecommerce websites for our customers, we provided robust ecommerce
               solutions to customers, but the cost of hosting, and simplicity
               became a problem within Small Medium Enterprises.
             </p>
-            <p className="text-base md:text-lg mb-4">
+            <p className="text-base md:text-lg mb-6">
               Every businesses which we call hustlers needs an online presence.
               So whether you're starting an online business from scratch, or you
               have started but don't have a professional online presence, then
@@ -57,13 +59,13 @@ const About: NextPage = () => {
               to build a professional, mobile-optimized site and grow your
               business with integrated marketing and advanced analytics.
             </p>
-            <p className="text-base md:text-lg mb-4">
+            <p className="text-base md:text-lg mb-6">
               We also help you tackle the manual hassles of running a successful
               online store by simplifying shipping, taxes, and inventory
               management. SellHustle customers can easily sell anywhere and
               everywhere.
             </p>
-            <p className="text-base md:text-lg mb-4">
+            <p className="text-base md:text-lg mb-6">
               Here is a massive opportunity in front of us. We’re building a
               business that is big, meaningful, and lasting. And we are helping
               businesses in Africa do the same.
