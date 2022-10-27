@@ -21,7 +21,7 @@ const Panel = (props: any) => {
   return (
     <div className="panel" role="tabpanel" aria-expanded={isActive}>
       <button
-        className="panel__label border-t-2 border-gray-400 text-gray-400 py-4"
+        className="panel__label border-t-2 border-gray-400 text-gray-400 py-5"
         role="tab"
         onClick={activateTab}
       >
@@ -40,14 +40,14 @@ const Panel = (props: any) => {
 };
 
 const Accordion = (props: any) => {
-  const [activeTab, setActiveTab] = React.useState(0);
+  const [activeTab, setActiveTab] = React.useState(null);
   const activateTab = (index: any) => {
     setActiveTab((prev) => (prev === index ? -1 : index));
   };
   const { panels } = props;
 
   return (
-    <div className="accordion" role="tablist">
+    <div className="accordion max-w-4xl mx-auto" role="tablist">
       {panels.map((panel: any, index: React.Key) => (
         <Panel
           key={index}

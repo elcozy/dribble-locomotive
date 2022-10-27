@@ -20,7 +20,7 @@ const Header: NextPage = () => {
           className="w-full bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded"
           aria-label="Global"
         >
-          <div className="container flex flex-wrap justify-between items-center mx-auto md:mt-3 lg:pt-1">
+          <div className="container flex flex-wrap justify-between items-center mx-auto md:my-3 lg:py-1">
             <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
               <div className="flex w-full items-center justify-between md:w-auto">
                 <a href="/#">

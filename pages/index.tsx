@@ -11,12 +11,16 @@ import {
   Banner,
 } from "../components";
 import "@splidejs/react-splide/css";
+import React from "react";
+// import ScrollAnimation from "react-animate-on-scroll";
+
+// import "aos/dist/aos.css";
 
 const Home: NextPage = () => {
   return (
     <div className="font-['Plus_Jakarta_Sans']">
       <Head>
-        <title>Create Next App</title>
+        <title>Sark</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -30,7 +34,10 @@ const Home: NextPage = () => {
         <Banner />
         <Header />
         <Hero />
+        {/* <ScrollAnimation animateIn="fadeIn"> */}
         <Demo />
+        {/* </ScrollAnimation> */}
+
         <WhatWeDo />
         <Partner />
         <Testimonial />

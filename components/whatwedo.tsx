@@ -28,13 +28,13 @@ const WhatWeDo: NextPage = () => {
           <div className="rounded-md relative">
             <img
               className="rounded-2xl drop-shadow-lg w-full md:w-3/4 h-auto ml-auto"
-              src="/demo-img.png"
+              src="/live-sales-1.jpg"
             />
           </div>
           <div className="rounded-md relative">
             <img
               className="rounded-2xl drop-shadow-lg w-full md:w-3/4 h-auto"
-              src="/demo-img.png"
+              src="/live-sales-3.png"
             />
           </div>
           <div className="relative flex flex-col py-3">

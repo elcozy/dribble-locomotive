@@ -2,10 +2,6 @@ import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
-function classNames(...classes: any) {
-  return classes.filter(Boolean).join(" ");
-}
-
 const MenuDropdown = ({ MenuName }: any) => {
   return (
     <Menu as="div" className="relative inline-block text-left">
@@ -24,46 +20,73 @@ const MenuDropdown = ({ MenuName }: any) => {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-          <div className="py-1">
+        <Menu.Items className="absolute right-0 z-10 mt-2 w-80 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+          <div className="py-4">
             <Menu.Item>
-              {({ active }) => (
-                <a
-                  href="#"
-                  className={classNames(
-                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-2 text-sm"
-                  )}
-                >
-                  Store
-                </a>
-              )}
+              <a
+                href="#"
+                className="text-gray-700 block hover:opacity-80 cursor hover:text-black px-4 py-4 text-sm"
+              >
+                <div className="grid grid-cols-5 gap-6">
+                  <div className="col-span-1 flex  items-center justify-center ">
+                    <img
+                      alt="Sark"
+                      className="h-5 w-auto sm:h-7"
+                      src="https://tailwindui.com/img/logos/mark.svg?color=black&shade=600"
+                    />
+                  </div>
+                  <div className="col-span-4 flex flex-col gap-1">
+                    <span className="md:block font-bold">Store</span>
+                    <span className="md:block text-gray-600 font-normal tracking-wide">
+                      Start selling online.
+                    </span>
+                  </div>
+                </div>
+              </a>
             </Menu.Item>
             <Menu.Item>
-              {({ active }) => (
-                <a
-                  href="#"
-                  className={classNames(
-                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-2 text-sm"
-                  )}
-                >
-                  Payment Links
-                </a>
-              )}
+              <a
+                href="#"
+                className="text-gray-700 block hover:opacity-80 cursor hover:text-black px-4 py-4 text-sm"
+              >
+                <div className="grid grid-cols-5 gap-6">
+                  <div className="col-span-1 flex items-center justify-center">
+                    <img
+                      alt="Sark"
+                      className="h-5 w-auto sm:h-7"
+                      src="https://tailwindui.com/img/logos/mark.svg?color=black&shade=600"
+                    />
+                  </div>
+                  <div className="col-span-4 flex flex-col gap-1">
+                    <span className="md:block font-bold">Payment Link</span>
+                    <span className="md:block text-gray-600 font-normal tracking-wide">
+                      Accept payment without writing code.
+                    </span>
+                  </div>
+                </div>
+              </a>
             </Menu.Item>
             <Menu.Item>
-              {({ active }) => (
-                <a
-                  href="#"
-                  className={classNames(
-                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-2 text-sm"
-                  )}
-                >
-                  Invoices
-                </a>
-              )}
+              <a
+                href="#"
+                className="text-gray-700 block hover:opacity-80 cursor hover:text-black px-4 py-4 text-sm"
+              >
+                <div className="grid grid-cols-5  gap-6">
+                  <div className="col-span-1 flex items-center justify-center ">
+                    <img
+                      alt="Sark"
+                      className="h-5 w-auto sm:h-7"
+                      src="https://tailwindui.com/img/logos/mark.svg?color=black&shade=600"
+                    />
+                  </div>
+                  <div className="col-span-4 flex flex-col gap-1">
+                    <span className="md:block font-bold">Invoices</span>
+                    <span className="md:block text-gray-600 font-normal tracking-wide">
+                      Create professional invoices.
+                    </span>
+                  </div>
+                </div>
+              </a>
             </Menu.Item>
           </div>
         </Menu.Items>

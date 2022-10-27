@@ -17,21 +17,25 @@ import CountryDropdown from "../components/countryDropdown";
 
 const pricing = [
   {
+    icon: "online-shop",
     title: "Online Store",
     description:
       "Build your online store with our comprehensive easy to use platform",
   },
   {
+    icon: "channel",
     title: "Sales channels",
     description:
       "Promote and sell your products on multiple sales channels all from within sellhustle",
   },
   {
+    icon: "analytics",
     title: "Grest analytics",
     description:
       "Sellhustle provides easy to understand analytics. So you can make solid business decisions.",
   },
   {
+    icon: "customer-service",
     title: "24/7 support ",
     description:
       "SellHustle provides support to every businesses, and it is for every plan",
@@ -60,7 +64,7 @@ const Pricing: NextPage = () => {
   return (
     <div className="font-['Plus_Jakarta_Sans']">
       <Head>
-        <title>Create Next App</title>
+        <title>Sark</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -72,21 +76,24 @@ const Pricing: NextPage = () => {
 
       <main className="w-full overflow-hidden">
         <Header />
-        <Container className="!pb-0">
-          <div className="relative flex flex-col py-3 my-7">
-            <h2 className="!leading-tight text-2xl font-semibold text-gray-900 sm:text-2xl md:text-3xl md:font-bold lg:font-extrabold lg:text-4xl mb-6 text-center">
-              <span className="md:block">
-                Setup your hustle, pick a plan later
-              </span>
-            </h2>
-            <h2 className="!leading-tight text-xl font-semibold text-gray-900 sm:text-2xl md:text-3xl md:font-bold lg:font-extrabold mb-4 text-center">
-              <span className="md:block">
-                Start your hustle with zero cost, yes completely free
-              </span>
-            </h2>
+        <Container bg="bg-gray-50" className="">
+          <div className="bg-gray-50 max-w-3xl mx-auto">
+            <div className="relative flex flex-col py-3 my-7">
+              <h2 className="!leading-tight text-2xl font-semibold text-gray-900 sm:text-2xl md:text-3xl md:font-bold lg:font-extrabold lg:text-4xl mb-6 text-center">
+                <span className="md:block">
+                  Setup your hustle, pick a plan later
+                </span>
+              </h2>
+              <h2 className="!leading-tight text-xl font-semibold text-gray-900 sm:text-2xl md:text-3xl md:font-bold lg:font-extrabold mb-4 text-center">
+                <span className="md:block">
+                  Start your hustle with zero cost, yes completely free
+                </span>
+              </h2>
+            </div>
           </div>
+        </Container>
+        <Container className="!pb-0">
           <div className="flex items-center justify-center">
-            {" "}
             <CountryDropdown />
           </div>
 
@@ -166,26 +173,26 @@ const Pricing: NextPage = () => {
             </div>
           </div>
           <div className="relative flex flex-col py-3 my-7">
-            <h2 className="!leading-tight text-2xl font-semibold text-gray-900 sm:text-xl md:text-2xl md:font-bold lg:font-extrabold lg:text-3xl mb-4 text-center">
+            <h2 className="!leading-tight text-2xl font-semibold text-gray-900 sm:text-xl md:text-2xl md:font-bold lg:font-extrabold lg:text-3xl my-6 text-left">
               Enjoy these features on any plan
             </h2>
-            <div className="relative flex flex-col md:flex-row gap-4">
+            <div className="relative flex-col md:flex-row gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {pricing.map((item) => (
                 <div
                   key={item.title}
-                  className="relative flex flex-col rounded-md p-6 lg:p-9"
+                  className="col-span-1 relative flex flex-col rounded-md pt-6 px-2"
                 >
                   <div className="mb-4 md:mb-5 rounded-full bg-white flex justify-center items-center w-12 h-12 mx-auto">
                     <img
                       alt="Sark"
-                      className="h-5 w-auto sm:h-7"
-                      src="https://tailwindui.com/img/logos/mark.svg?color=black&shade=600"
+                      className="h-10 w-auto sm:h-12"
+                      src={`/icons/${item.icon}.png`}
                     />
                   </div>
                   <h2 className="text-lg font-bold text-gray-900 lg:max-w-xl sm:text-xl lg:text-2xl mb-4 capitalize mx-auto">
                     <span className="md:block xl:inline">{item.title}</span>
                   </h2>
-                  <p className="text-gray-500 text-base md:text-lg mb-7">
+                  <p className="text-gray-500 text-base mb-7 text-center">
                     {item.description}
                   </p>
                 </div>
@@ -196,8 +203,10 @@ const Pricing: NextPage = () => {
             <h2 className="!leading-tight text-2xl font-semibold text-gray-900 sm:text-xl md:text-2xl md:font-bold lg:font-extrabold lg:text-3xl mb-4 md:mb-12 text-center">
               Frequently asked questions
             </h2>
-            <Accordion panels={panels} />
           </div>
+        </Container>
+        <Container bg="bg-gray-50" pdY="py-10 md:py-20">
+          <Accordion panels={panels} />
         </Container>
 
         <Testimonial />

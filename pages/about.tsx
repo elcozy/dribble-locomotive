@@ -17,7 +17,7 @@ const About: NextPage = () => {
   return (
     <div className="font-['Plus_Jakarta_Sans']">
       <Head>
-        <title>Create Next App</title>
+        <title>Sark</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -29,20 +29,24 @@ const About: NextPage = () => {
 
       <main className="w-full overflow-hidden">
         <Header />
-        <Container>
-          <div>
-            <div className="py-6 md:pb-20">
-              <h2 className="!leading-tight text-2xl font-semibold text-gray-900 sm:text-3xl md:text-4xl md:font-bold lg:font-extrabold lg:text-5xl mb-12 text-center">
+        <div className=" about-header">
+          <Container bg="none" className="max-w-3xl">
+            <div className="py-6 md:pb-20  text-white">
+              <h2 className="!leading-tight text-4xl font-bold lg:font-extrabold lg:text-5xl mb-12 text-center">
                 <span className="md:block">ABOUT SELLHUSTLE</span>
               </h2>
-              <h2 className="!leading-tight text-base font-semibold text-gray-900  md:text-2xl md:font-bold lg:font-extrabold lg:text-3xl mb-4 text-center">
+              <h2 className="!leading-tight text-2xl font-semibold md:text-3xl md:font-semi-bold lg:text-3xl mb-4 text-center">
                 <span className="md:block">
                   We believe every hustler needs should be able to participate
                   and thrive in the economy.
                 </span>
               </h2>
             </div>
+          </Container>
+        </div>
 
+        <Container className="max-w-3xl mx-auto text-justify">
+          <div>
             <p className="text-base md:text-lg mb-6">
               SellHustle started in 2021, with the goal of easing the stress of
               owning an ecommerce website. Before now, we started with building
