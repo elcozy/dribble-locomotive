@@ -79,12 +79,12 @@ const Pricing: NextPage = () => {
         <Container bg="bg-gray-50" className="">
           <div className="bg-gray-50 max-w-3xl mx-auto">
             <div className="relative flex flex-col py-3 my-7">
-              <h2 className="!leading-tight text-2xl font-semibold text-gray-900 sm:text-2xl md:text-3xl md:font-bold lg:font-extrabold lg:text-5xl mb-6 text-center">
+              <h2 className="!leading-tight text-2xl text-gray-900 sm:text-2xl md:text-3xl font-bold lg:text-4xl mb-6 text-center">
                 <span className="md:block">
                   Setup your hustle, pick a plan later
                 </span>
               </h2>
-              <h2 className="!leading-tight text-xl font-semibold text-gray-900 sm:text-2xl md:text-3xl md:font-bold lg:font-extrabold mb-4 text-center">
+              <h2 className="!leading-tight text-xl font-medium text-gray-900 sm:text-2xl md:text-3xl mb-4 text-center">
                 <span className="md:block">
                   Start your hustle with zero cost, yes completely free
                 </span>
