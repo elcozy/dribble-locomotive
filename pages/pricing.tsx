@@ -64,7 +64,7 @@ const Pricing: NextPage = () => {
   return (
     <div className="font-['Plus_Jakarta_Sans']">
       <Head>
-        <title>Sark</title>
+        <title>Sell Hustle</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -79,7 +79,7 @@ const Pricing: NextPage = () => {
         <Container bg="bg-gray-50" className="">
           <div className="bg-gray-50 max-w-3xl mx-auto">
             <div className="relative flex flex-col py-3 my-7">
-              <h2 className="!leading-tight text-2xl font-semibold text-gray-900 sm:text-2xl md:text-3xl md:font-bold lg:font-extrabold lg:text-4xl mb-6 text-center">
+              <h2 className="!leading-tight text-2xl font-semibold text-gray-900 sm:text-2xl md:text-3xl md:font-bold lg:font-extrabold lg:text-5xl mb-6 text-center">
                 <span className="md:block">
                   Setup your hustle, pick a plan later
                 </span>
@@ -102,7 +102,7 @@ const Pricing: NextPage = () => {
               <h2 className="text-lg font-semibold text-gray-900 lg:max-w-xl sm:text-xl lg:text-2xl mb-2 capitalize">
                 Free
               </h2>
-              <p className="text-gray-500 text-base mb-7">
+              <p className="text-gray-500 text-base md:text-lg mb-7">
                 Sell in person, online, over the phone, or out in the field. No
                 setup fees or monthly fees -- only pay when you take a payment
               </p>
@@ -126,8 +126,7 @@ const Pricing: NextPage = () => {
               <h2 className="text-lg font-semibold text-gray-900 lg:max-w-xl sm:text-xl lg:text-2xl mb-2 capitalize">
                 Plus
               </h2>
-              <p className="text-gray-500 text-base mb-7">
-                {" "}
+              <p className="text-gray-500 text-base md:text-lg mb-7">
                 Get tadvanced features designed specifically for restaurants,
                 retailers, or appointment- based business. Upgrade when you want
                 to, cancel anytime.
@@ -152,7 +151,7 @@ const Pricing: NextPage = () => {
               <h2 className="text-lg font-semibold text-gray-900 lg:max-w-xl sm:text-xl lg:text-2xl mb-2 capitalize">
                 Premium
               </h2>
-              <p className="text-gray-500 text-base mb-7">
+              <p className="text-gray-500 text-base md:text-lg mb-7">
                 Build a bespoke plan meets the complexity of your operations.
                 Custom processing rates may be available pending eligibility
               </p>
@@ -184,7 +183,7 @@ const Pricing: NextPage = () => {
                 >
                   <div className="mb-4 md:mb-5 rounded-full bg-white flex justify-center items-center w-12 h-12 mx-auto">
                     <img
-                      alt="Sark"
+                      alt="Sell Hustle"
                       className="h-10 w-auto sm:h-12"
                       src={`/icons/${item.icon}.png`}
                     />
@@ -192,7 +191,7 @@ const Pricing: NextPage = () => {
                   <h2 className="text-lg font-bold text-gray-900 lg:max-w-xl sm:text-xl lg:text-2xl mb-4 capitalize mx-auto">
                     <span className="md:block xl:inline">{item.title}</span>
                   </h2>
-                  <p className="text-gray-500 text-base mb-7 text-center">
+                  <p className="text-gray-500 text-base md:text-lg mb-7 text-center">
                     {item.description}
                   </p>
                 </div>

@@ -42,10 +42,13 @@ const Testimonial: NextPage = () => {
         </div>
         <div className="relative col-span-6 flex flex-col md:flex-row gap-4">
           {Array.from(Array(2).keys()).map((num) => (
-            <div className="relative flex flex-col rounded-md border-2 border-black text-slate-700 px-4 py-5">
+            <div
+              key={num}
+              className="relative flex flex-col rounded-md border-2 border-black text-slate-700 px-4 py-5"
+            >
               <div className="rounded-full bg-black flex justify-center items-center w-12 h-12 mb-5">
                 <img
-                  alt="Sark"
+                  alt="Sell Hustle"
                   className="h-5 w-auto sm:h-7"
                   src="https://tailwindui.com/img/logos/mark.svg?color=yellow&shade=500"
                 />

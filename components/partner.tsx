@@ -30,7 +30,7 @@ const Partner: NextPage = () => {
                 >
                   <div className="rounded-full bg-yellow-400 flex justify-center items-center w-12 h-12">
                     <img
-                      alt="Sark"
+                      alt="Sell Hustle"
                       className="h-5 w-auto sm:h-7"
                       src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600"
                     />

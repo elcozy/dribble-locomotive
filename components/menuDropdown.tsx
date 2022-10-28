@@ -20,7 +20,7 @@ const MenuDropdown = ({ MenuName }: any) => {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-2 w-80 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="absolute left-0 z-10 mt-2 w-80 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="py-4">
             <Menu.Item>
               <a
@@ -30,7 +30,7 @@ const MenuDropdown = ({ MenuName }: any) => {
                 <div className="grid grid-cols-5 gap-6">
                   <div className="col-span-1 flex  items-center justify-center ">
                     <img
-                      alt="Sark"
+                      alt="Sell Hustle"
                       className="h-5 w-auto sm:h-7"
                       src="https://tailwindui.com/img/logos/mark.svg?color=black&shade=600"
                     />
@@ -52,7 +52,7 @@ const MenuDropdown = ({ MenuName }: any) => {
                 <div className="grid grid-cols-5 gap-6">
                   <div className="col-span-1 flex items-center justify-center">
                     <img
-                      alt="Sark"
+                      alt="Sell Hustle"
                       className="h-5 w-auto sm:h-7"
                       src="https://tailwindui.com/img/logos/mark.svg?color=black&shade=600"
                     />
@@ -74,7 +74,7 @@ const MenuDropdown = ({ MenuName }: any) => {
                 <div className="grid grid-cols-5  gap-6">
                   <div className="col-span-1 flex items-center justify-center ">
                     <img
-                      alt="Sark"
+                      alt="Sell Hustle"
                       className="h-5 w-auto sm:h-7"
                       src="https://tailwindui.com/img/logos/mark.svg?color=black&shade=600"
                     />

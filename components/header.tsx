@@ -4,7 +4,7 @@ import type { NextPage } from "next";
 import { Fragment } from "react";
 import MenuDropdown from "./menuDropdown";
 
-const navigation = [
+export const navigation = [
   { name: "About", href: "/about" },
   { name: "Features", href: "#features" },
   { name: "Pricing", href: "/pricing" },
@@ -20,20 +20,18 @@ const Header: NextPage = () => {
           className="w-full bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded"
           aria-label="Global"
         >
-          <div className="container flex flex-wrap justify-between items-center mx-auto md:my-3 lg:py-1">
+          <div className="container flex flex-wrap justify-between items-center mx-auto md:my-1 lg:py-1">
             <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
               <div className="flex w-full items-center justify-between md:w-auto">
                 <a href="/#">
-                  <span className="sr-only">Sark</span>
+                  <span className="sr-only">Sell Hustle</span>
                   <img
                     alt="Your Company"
-                    className="h-8 w-auto sm:h-10"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600"
+                    className="h-8 w-auto sm:h-12 lg:h-14"
+                    src="/logo.png"
                   />
                 </a>
-                <span className="pl-2 self-center text-xl font-semibold whitespace-nowrap text-gray-700">
-                  Sark
-                </span>
+
                 <div className="-mr-2 flex items-center md:hidden">
                   <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
                     <span className="sr-only">Open main menu</span>
@@ -46,7 +44,7 @@ const Header: NextPage = () => {
               <ul className="flex flex-col mt-4 md:flex-row md:gap-12 md:mt-0 md:text-sm md:font-medium">
                 {navigation.map((item) => {
                   if (item.name === "Features") {
-                    return <MenuDropdown MenuName="Features" />;
+                    return <MenuDropdown key={item.name} MenuName="Features" />;
                   }
                   return (
                     <li key={item.name}>
@@ -86,11 +84,7 @@ const Header: NextPage = () => {
                 <div className="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
                   <div className="flex items-center justify-between px-5 pt-4">
                     <div>
-                      <img
-                        className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600"
-                        alt=""
-                      />
+                      <img className="h-8 w-auto" src="/logo.png" alt="" />
                     </div>
                     <div className="-mr-2">
                       <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">

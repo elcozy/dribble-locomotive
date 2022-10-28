@@ -49,7 +49,7 @@ const Demo: NextPage = () => {
           >
             <div className="mb-4 md:mb-5 rounded-full bg-white flex justify-center items-center w-12 h-12">
               <img
-                alt="Sark"
+                alt="Sell Hustle"
                 className="h-5 w-auto sm:h-7"
                 src="https://tailwindui.com/img/logos/mark.svg?color=black&shade=600"
               />

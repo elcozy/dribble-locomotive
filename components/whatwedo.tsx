@@ -8,21 +8,21 @@ const WhatWeDo: NextPage = () => {
         <div className="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-20 md:space-y-0">
           <div className="relative flex flex-col py-3">
             <h2 className="text-2xl font-semibold text-gray-900 lg:max-w-xl sm:text-3xl md:text-4xl lg:text-5xl md:font-bold mb-4 !leading-tight">
-              <span className="md:block text-blue-700">Build your</span>
-              <span className="md:block"> brand & reach</span>
-              <span className="md:block"> out to social followers</span>
+              <span className="md:block text-blue-700">Boost your</span>
+              <span className="md:block"> sales with our live commerce</span>
+              {/* <span className="md:block"> live sales</span> */}
             </h2>
             <p className="text-gray-500 text-base md:text-lg mb-7 text-justify">
               <span className="block my-2">
-                Brand awarenessis cited as the top priority for marketers, and
-                social media channels are a one-to-many solution for getting the
-                word out about your products and services
+                You can develop deeper connections with customers through live streaming and build long-term relationship with your customers. 
+                This will give your brand more trust and customers get to see what they 
+                are ordering for, not just a picture.
               </span>
-              <span className="block my-2">
+              {/* <span className="block my-2">
                 By creating a strong brand presence on social media, you can
                 reach a broader audience & get partners brand advocated to post
                 content.
-              </span>
+              </span> */}
             </p>
           </div>
           <div className="rounded-md relative">
@@ -39,13 +39,12 @@ const WhatWeDo: NextPage = () => {
           </div>
           <div className="relative flex flex-col py-3">
             <h2 className="text-2xl font-semibold text-gray-900 lg:max-w-xl sm:text-3xl md:text-4xl lg:text-5xl md:font-bold mb-4 !leading-tight">
-              <span className="md:block text-blue-700">Bring your</span>
-              <span className="md:block"> target users</span>
-              <span className="md:block"> together on social media</span>
+              <span className="md:block text-blue-700">Increase your sales</span>
+              <span className="md:block"> on social media</span>
             </h2>
             <p className="text-gray-500 text-base md:text-lg mb-7 text-justify">
               <span className="block my-2">
-                Social media sudience research isn't complicated. It is mainly
+                Social media audience research isn't complicated. It is mainly
                 about narrowing your focus while expanding your reach.
               </span>
               <span className="block my-2">

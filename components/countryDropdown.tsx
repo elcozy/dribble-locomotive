@@ -58,10 +58,10 @@ const CountryDropdown = () => {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-2 w-max origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-          <div className="py-7 px-6 grid grid-cols-3 gap-2">
+        <Menu.Items className="absolute left-1/2 transform -translate-x-1/2  z-10 mt-2 w-max origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+          <div className="py-7 px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
             {countries.map((countryList, i) => (
-              <Menu.Item>
+              <Menu.Item key={countryList.countryName}>
                 <a
                   onClick={() => setSelectedCountry(i)}
                   href="#"

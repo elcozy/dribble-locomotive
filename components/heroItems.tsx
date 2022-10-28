@@ -36,7 +36,7 @@ const HeroItem = ({
           className={`mb-4 md:mb-5 rounded-full ${bg} flex justify-center items-center w-16 h-16`}
         >
           <img
-            alt="Sark"
+            alt="Sell Hustle"
             className="h-5 w-auto sm:h-7"
             src={`https://tailwindui.com/img/logos/mark.svg?color=${imgBg}&shade=600`}
           />
