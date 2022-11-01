@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import React from "react";
+import { THeroItem } from "./constants";
 import { Container } from "./container";
-
 
 const HeroItem = ({
   tag = "perfect",
@@ -10,7 +10,7 @@ const HeroItem = ({
   imgBg = "green",
   bg = "green",
   classNames = "",
-  itemImage = ""
+  itemImage = "",
 }: THeroItem) => {
   return (
     <div className={`${classNames} absolute z-20 hidden xl:block`}>
