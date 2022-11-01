@@ -1,45 +1,12 @@
 import type { NextPage } from "next";
 import { HeroItems } from ".";
+import { heroFLoat } from "./constants";
 import { Container } from "./container";
 
-const heroFLoat = [
-  {
-    tag: "improvement",
-    color: "text-violet-500",
-    bg: "bg-violet-200",
-    imgBg: "violet",
-    comment: "Just helpful for me, and I like it!",
-    position: "top-0 origin-top-left rotate-6",
-  },
-  {
-    tag: "perfect",
-    color: "text-green-500",
-    bg: "bg-green-200",
-    imgBbg: "green",
-    comment: "Very helpful for me to manage my data",
-    position: "right-0 origin-bottom -rotate-6",
-  },
-  {
-    tag: "cool app",
-    color: "text-red-500",
-    bg: "bg-red-200",
-    imgBg: "red",
-    comment: "Its an amazing app for company to managing",
-    position: "bottom-0 origin-bottom -rotate-6",
-  },
-  {
-    tag: "awesome",
-    color: "text-amber-500",
-    bg: "bg-amber-200",
-    imgBg: "amber",
-    comment: "I think its good app for manage!",
-    position: "bottom-0 right-0 origin-bottom rotate-6",
-  },
-];
 const Hero: NextPage = () => (
   <div className="hero relative">
     <Container className="my-auto w-full">
-      {heroFLoat.map((item) => (
+      {heroFLoat.map((item: any) => (
         <HeroItems
           key={item.tag}
           tag={item.tag}
@@ -48,6 +15,7 @@ const Hero: NextPage = () => (
           color={item.color}
           imgBg={item.imgBg}
           classNames={item.position}
+          itemImage={item.itemImage}
         />
       ))}
 
@@ -57,13 +25,13 @@ const Hero: NextPage = () => (
             <div className="text-center lg:max-w-4xl lg:mx-auto">
               <h1 className="!leading-tight text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:max-w-3xl lg:mx-auto  md:text-6xl lg:text-7xl">
                 <span className="block xl:inline">
-                  Easy way to manage your productivity
+                  Build a borderless and trusted hustle.
                 </span>
               </h1>
               <p className="!leading-relaxed mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl lg:max-w-full sm:text-lg md:mt-5 md:text-xl lg:text-2xl">
-                Drive performance and your cross-functional collaboration with
-                easy-to-use dashboards and data visualizions and automated
-                insights in one click
+                No matter your hustle, with our ecommerce platform, you will
+                build a trusted hustle that can attract customers and sales
+                anywhere.
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center">
                 <div className="rounded-full shadow">

@@ -13,7 +13,7 @@ const Partner: NextPage = () => {
       <>
         <h2 className="text-2xl font-semibold text-white w-full sm:text-3xl lg:text-5xl mb-4 text-center">
           <span className="block">You are not alone. The pain of</span>
-          <span className="block"> website creation is real</span>
+          <span className="block sm:mt-5"> increasing sales is real</span>
         </h2>
         <div className="mx-auto md:pt-9">
           <div className="space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10 md:space-y-0 mb-3">
@@ -30,7 +30,7 @@ const Partner: NextPage = () => {
                 >
                   <div className="rounded-full bg-yellow-400 flex justify-center items-center w-12 h-12">
                     <img
-                      alt="Sell Hustle"
+                      alt="SellHustle"
                       className="h-5 w-auto sm:h-7"
                       src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600"
                     />

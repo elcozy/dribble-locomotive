@@ -64,7 +64,7 @@ const Pricing: NextPage = () => {
   return (
     <div className="font-['Plus_Jakarta_Sans']">
       <Head>
-        <title>Sell Hustle</title>
+        <title>SellHustle</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -183,7 +183,7 @@ const Pricing: NextPage = () => {
                 >
                   <div className="mb-4 md:mb-5 rounded-full bg-white flex justify-center items-center w-12 h-12 mx-auto">
                     <img
-                      alt="Sell Hustle"
+                      alt="SellHustle"
                       className="h-10 w-auto sm:h-12"
                       src={`/icons/${item.icon}.png`}
                     />

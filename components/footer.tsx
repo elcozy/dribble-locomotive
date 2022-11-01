@@ -1,27 +1,27 @@
 import type { NextPage } from "next";
 import { Container } from "./container";
-import { navigation } from "./header";
+import { navigation } from "./constants";
 
 const Footer: NextPage = () => {
   return (
     <>
-      <Container bg="bg-gray-50" text="text-gray-500" pdY="pt-6 md:pt-7">
-        <footer className="relative mb-4 md:pb-7">
-          <div className=" sm:grid sm:grid-cols-11 lg:flex mt-4 sm:mt-0 sm:w-full flex flex-col lg:flex-row gap-4 lg:gap-2 justify-between">
+      <Container bg="bg-gray-50" text="text-gray-500" pdY="pt-2 md:pt-4">
+        <footer className="relative mb-4 md:mb-4">
+          <div className=" sm:grid sm:grid-cols-11 lg:flex mt-4 sm:mt-0 sm:w-full flex flex-col lg:flex-row gap-3 lg:gap-2 justify-between">
             <div className="flex flex-col sm:col-span-2 md:col-span-2 ">
               <span className="flex gap-2 items-center font-bold text-lg capitalize mt-0">
                 <a href="#">
-                  <span className="sr-only">Sell Hustle</span>
+                  <span className="sr-only">SellHustle</span>
                   <img
-                    alt="Sell Hustle"
-                    className="h-10 w-auto sm:h-14"
+                    alt="SellHustle"
+                    className="h-12 w-auto sm:h-14"
                     src="/logo.png"
                   />
                 </a>
               </span>
             </div>
-            <div className="flex items-center  sm:col-span-6 flex-col md:flex-row md:gap-7">
-              {navigation.map((items) => (
+            <div className="flex items-center  sm:col-span-6 flex-row gap-4 flex-wrap md:flex-row md:gap-7">
+              {navigation.map((items: any) => (
                 <div
                   className="flex flex-col sm:col-span-3 md:col-span-2"
                   key={items.name}

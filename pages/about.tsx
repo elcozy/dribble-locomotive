@@ -8,7 +8,7 @@ const About: NextPage = () => {
   return (
     <div className="font-['Plus_Jakarta_Sans']">
       <Head>
-        <title>Sell Hustle</title>
+        <title>SellHustle</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />

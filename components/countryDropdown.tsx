@@ -1,30 +1,11 @@
 import React, { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import { countries } from "./constants";
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
 }
 
-const countries = [
-  { countryName: "Cameroon", image: "cm" },
-  { countryName: "Egypt", image: "egypt" },
-  { countryName: "Ghana", image: "gh" },
-  { countryName: "Ivory Coast", image: "ci" },
-  { countryName: "Kenya", image: "ke" },
-  { countryName: "Malawi", image: "" },
-  { countryName: "Mauritius", image: "" },
-  { countryName: "Nigeria", image: "" },
-  { countryName: "Rest of Europe", image: "eu" },
-  { countryName: "Rwanda", image: "" },
-  { countryName: "Senegal", image: "" },
-  { countryName: "South Africa", image: "sa" },
-  { countryName: "Tanzania", image: "" },
-  { countryName: "Uganda", image: "" },
-  { countryName: "United Kingdom", image: "gb" },
-  { countryName: "United States", image: "us" },
-  { countryName: "Zambia", image: "" },
-];
 const CountryDropdown = () => {
   const [selectedCountry, setSelectedCountry] = React.useState(15);
 

@@ -2,32 +2,25 @@ import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import type { NextPage } from "next";
 import { Fragment } from "react";
+import { featuresDropdownItems, navigation } from "./constants";
 import MenuDropdown from "./menuDropdown";
-
-export const navigation = [
-  { name: "About", href: "/about" },
-  { name: "Features", href: "#features" },
-  { name: "Pricing", href: "/pricing" },
-  { name: "Resources", href: "#resources" },
-  { name: "Contact", href: "#contact" },
-];
 
 const Header: NextPage = () => {
   return (
     <Popover>
       <div className="relative">
         <nav
-          className="w-full bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded"
+          className="w-full bg-white border-gray-200 px-4 py-2.5 rounded"
           aria-label="Global"
         >
           <div className="container flex flex-wrap justify-between items-center mx-auto md:my-1 lg:py-1">
             <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
               <div className="flex w-full items-center justify-between md:w-auto">
                 <a href="/#">
-                  <span className="sr-only">Sell Hustle</span>
+                  <span className="sr-only">SellHustle</span>
                   <img
                     alt="Your Company"
-                    className="h-8 w-auto sm:h-12 lg:h-14"
+                    className="h-12 w-auto lg:h-14"
                     src="/logo.png"
                   />
                 </a>
@@ -44,7 +37,13 @@ const Header: NextPage = () => {
               <ul className="flex flex-col mt-4 md:flex-row md:gap-12 md:mt-0 md:text-sm md:font-medium">
                 {navigation.map((item) => {
                   if (item.name === "Features") {
-                    return <MenuDropdown key={item.name} MenuName="Features" />;
+                    return (
+                      <MenuDropdown
+                        key={item.name}
+                        MenuName="Features"
+                        menuDropdownItems={featuresDropdownItems}
+                      />
+                    );
                   }
                   return (
                     <li key={item.name}>
@@ -79,12 +78,12 @@ const Header: NextPage = () => {
             >
               <Popover.Panel
                 focus
-                className="absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 transition md:hidden"
+                className="absolute inset-x-0 top-0 z-50 origin-top-right transform p-0 transition md:hidden"
               >
                 <div className="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
                   <div className="flex items-center justify-between px-5 pt-4">
                     <div>
-                      <img className="h-8 w-auto" src="/logo.png" alt="" />
+                      <img className="h-12 w-auto" src="/logo.png" alt="" />
                     </div>
                     <div className="-mr-2">
                       <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
@@ -93,22 +92,33 @@ const Header: NextPage = () => {
                       </Popover.Button>
                     </div>
                   </div>
-                  <div className="space-y-1 px-2 pt-2 pb-3">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                    <div className="rounded-full shadow">
+                  <div className="space-y-1 px-0 pt-2 pb-5">
+                    {navigation.map((item) => {
+                      if (item.name === "Features") {
+                        return (
+                          <MenuDropdown
+                            key={item.name}
+                            MenuName="Features"
+                            menuDropdownItems={featuresDropdownItems}
+                          />
+                        );
+                      }
+                      return (
+                        <a
+                          key={item.name}
+                          href={item.href}
+                          className="mx-3 block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
+                        >
+                          {item.name}
+                        </a>
+                      );
+                    })}
+                    <div className="mx-3 rounded-full shadow">
                       <a
                         href="#"
                         className="flex w-full items-center justify-center rounded-full border border-transparent bg-blue-600 px-8 py-2 text-base font-medium text-white hover:bg-blue-700 md:px-10 md:text-lg"
                       >
-                        Request a demo 🚀
+                        Start free trial 🚀
                       </a>
                     </div>
                   </div>

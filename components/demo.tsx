@@ -5,53 +5,59 @@ import { Container } from "./container";
 
 const marketingPattern = [
   {
-    title: "Social media strategy",
+    title: "Social media commerce",
+    icon: "social-network",
     description:
-      "A social media strategy is a summary of everything you plan to do and hope to achieve on social media.",
+      "Our social media tools helps you promote your business and sell your products on your social media accounts.",
   },
   {
-    title: "Digital marketing plan",
+    title: "Trusted Hustle",
+    icon: "verified",
     description:
-      "Digital marketing is important because it connects a business with its customers & is effective in all industries.",
+      "With SellHustle commerce tool, you will be building a trusted hustle. Potential customers gets to verify your hustle.",
   },
   {
     title: "Search Engine Optimazation",
+    icon: "seo",
     description:
-      "Search engine optimazation (SEO) is the art and science of getting pages to rank higher in search engines.",
+      "SellHustle takes care of SEO for you. With the proper setup, your products and business gets better ranking on search engines.",
+    // "Search engine optimazation (SEO) is the art and science of getting pages to rank higher in search engines.",
   },
 ];
 const Demo: NextPage = () => {
   const [showDashboard, setShowDashboard] = React.useState(false);
   return (
     <Container bg="bg-gray-50">
-      <div className="space-y-10 md:grid md:grid-cols-10 md:gap-x-8 md:gap-y-20 md:space-y-0 py-6 md:py-10">
-        <div className="col-span-6 relative flex flex-col py-3">
-          <h2 className="!leading-tight text-2xl font-semibold text-gray-900 lg:max-w-xl sm:text-3xl md:text-4xl md:font-bold lg:font-extrabold lg:text-5xl mb-4">
-            <span className="md:block">Take the lead in smartly</span>
-            <span className="md:block"> social media marketing</span>
+      <div className="space-y-5 md:grid md:grid-cols-10 md:gap-x-8 md:gap-y-20 md:space-y-0 py-6 md:py-10">
+        <div className="col-span-6 relative flex flex-col my-2">
+          <h2 className="!leading-tight text-2xl text-gray-900 lg:max-w-xl sm:text-3xl md:text-4xl font-bold lg:font-extrabold lg:text-5xl md:mb-4">
+            <span className="md:block">
+              Build a successful online business with our Commerce tools.
+            </span>
           </h2>
         </div>
         <div className="col-span-4 rounded-md relative">
           <p className="text-gray-500 text-base md:text-lg lg:text-xl mb-7 text-justify">
-            <span className="block my-2">
-              We offer some special services which you can easily complete the
-              marketing work on social media. Which helps increase your lead and
-              sales
+            <span className="block my-3">
+              With Sellhustle you can create a free ecommerce website and start
+              selling anywhere with just a few clicks. It is designed to grow
+              your revenue and provide the best commerce experience to your
+              customers.
             </span>
           </p>
         </div>
       </div>
-      <div className="relative flex flex-col md:flex-row gap-4">
+      <div className="relative flex flex-col md:grid grid-cols-3 gap-4">
         {marketingPattern.map((item) => (
           <div
             key={item.title}
-            className="relative flex flex-col rounded-md border-2 p-6 lg:p-9 border-slate-900"
+            className="relative flex flex-col md:col-span-1 rounded-md border-2 p-6 lg:p-9 border-slate-900"
           >
             <div className="mb-4 md:mb-5 rounded-full bg-white flex justify-center items-center w-12 h-12">
               <img
-                alt="Sell Hustle"
-                className="h-5 w-auto sm:h-7"
-                src="https://tailwindui.com/img/logos/mark.svg?color=black&shade=600"
+                alt="SellHustle"
+                className="h-5 w-auto sm:h-12 "
+                src={`/icons/${item.icon}.png`}
               />
             </div>{" "}
             <h2 className="text-lg font-bold text-gray-900 lg:max-w-xl sm:text-xl lg:text-2xl mb-4 capitalize">
