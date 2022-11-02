@@ -43,7 +43,7 @@ const Testimonial: NextPage = () => {
               <div className="rounded-full bg-white flex justify-center items-center w-12 h-12 mb-5">
                 <img
                   alt="SellHustle"
-                  className="h-5 w-auto sm:h-12"
+                  className="h-10 w-auto md:h-12"
                   src={`/icons/${item.icon}.png`}
                 />
               </div>

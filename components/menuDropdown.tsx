@@ -42,7 +42,7 @@ const MenuDropdown = ({ MenuName, menuDropdownItems }: any) => {
                       <div className="col-span-1 flex  items-center justify-center ">
                         <img
                           alt="SellHustle"
-                          className="h-5 w-auto sm:h-7"
+                          className="h-10 w-auto"
                           src={menuDrop.img}
                         />
                       </div>
@@ -79,7 +79,7 @@ const MenuDropdown = ({ MenuName, menuDropdownItems }: any) => {
                 <div className="col-span-1 flex  items-center justify-center ">
                   <img
                     alt="SellHustle"
-                    className="h-5 w-auto sm:h-7"
+                    className="h-10 w-auto"
                     src={menuDrop.img}
                   />
                 </div>

@@ -1,7 +1,6 @@
 import { NextPage } from "next";
 import React from "react";
 import { THeroItem } from "./constants";
-import { Container } from "./container";
 
 const HeroItem = ({
   tag = "perfect",

@@ -20,7 +20,7 @@ const Header: NextPage = () => {
                   <span className="sr-only">SellHustle</span>
                   <img
                     alt="Your Company"
-                    className="h-12 w-auto lg:h-14"
+                    className="w-auto h-14  md:h-20"
                     src="/logo.png"
                   />
                 </a>
@@ -83,7 +83,7 @@ const Header: NextPage = () => {
                 <div className="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
                   <div className="flex items-center justify-between px-5 pt-4">
                     <div>
-                      <img className="h-12 w-auto" src="/logo.png" alt="" />
+                      <img className="h-16 w-auto" src="/logo.png" alt="" />
                     </div>
                     <div className="-mr-2">
                       <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
